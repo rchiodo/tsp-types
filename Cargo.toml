@@ -1,0 +1,24 @@
+[package]
+name = "tsp-types"
+version = "0.4.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+description = "Rust types for the Type Server Protocol (TSP) — structured type queries between type checkers and editor extensions over JSON-RPC."
+homepage = "https://github.com/nicolo-ribaudo/tc39-proposal-type-server-protocol"
+documentation = "https://docs.rs/tsp-types"
+repository = "https://github.com/rchiodo/tsp-types"
+keywords = ["tsp", "lsp", "type-checker", "type-server-protocol"]
+categories = ["development-tools"]
+readme = "README.md"
+
+[lib]
+doctest = false
+
+[dependencies]
+lsp-types = { version = "0.97", features = ["proposed"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[dev-dependencies]
+serde_json = "1"
