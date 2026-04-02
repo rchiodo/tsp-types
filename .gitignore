@@ -1,2 +1,6 @@
 /target
 Cargo.lock
+__pycache__/
+*.pyc
+.venv/
+lsprotocol/
