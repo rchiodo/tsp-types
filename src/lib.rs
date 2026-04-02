@@ -5,11 +5,7 @@
 //! communication between a TSP client (e.g., Pylance) and a type checker
 //! (e.g., ty, pyrefly).
 //!
-//! The crate is organized into:
-//! - [`protocol`]: Method name constants and protocol version
-//! - [`types`]: Type representations sent over the wire
-//! - [`requests`]: Request/response parameter types
+//! Generated from the TypeScript protocol definition using
+//! `generator/generate_protocol.py`.
 
 pub mod protocol;
-pub mod requests;
-pub mod types;
