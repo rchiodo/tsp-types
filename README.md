@@ -1,6 +1,6 @@
 # tsp-types
 
-Rust type definitions for the [Type Server Protocol (TSP)](https://github.com/nicolo-ribaudo/tc39-proposal-type-server-protocol) — structured type queries between type checkers and editor extensions over JSON-RPC.
+Rust and Typescript type definitions for the [Type Server Protocol (TSP)](https://github.com/microsoft/pylance-release/discussions/7180) — structured type queries between type checkers and editor extensions over JSON-RPC.
 
 ## Repository structure
 
@@ -27,7 +27,7 @@ tsp-types/
 
 When the TypeScript protocol definition changes upstream:
 
-1. **Copy** the updated `typeServerProtocol.ts` (and `tspSupplemental.ts` if changed) from the [pyrx](https://github.com/nicolo-ribaudo/tc39-proposal-type-server-protocol) repository into `protocol/`.
+1. **Copy** the updated `typeServerProtocol.ts` (and `tspSupplemental.ts` if changed) from the [pyrx (closed source at the moment)](https://github.com/microsoft/pyrx) repository into `protocol/`.
 
 2. **Regenerate** the JSON representation:
    ```sh
